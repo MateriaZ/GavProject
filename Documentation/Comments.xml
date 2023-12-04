@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GavResortsTest</name>
+    </assembly>
+    <members>
+        <member name="M:GavResortsTest.Controllers.ContactController.Get">
+            <summary>
+            Listar todos os contatos cadastrados
+            </summary>
+            <returns>Lista de contatos com todas informações, a lista ficará vazia caso não tenha nenhum cadastrado</returns>
+        </member>
+        <member name="M:GavResortsTest.Controllers.ContactController.Get(System.Int32)">
+            <summary>
+            Obtém o contato atravéz do Identificador
+            </summary>
+            <param name="id">Número do Identificador do contato</param>
+            <returns>Todas informações de um único contato caso o ID exista</returns>
+        </member>
+        <member name="M:GavResortsTest.Controllers.ContactController.Post(GavResortsTest.Models.Contact)">
+            <summary>
+            Cadastrar um único contato
+            </summary>
+            <param name="contato">Entidade contato que será cadastrada, não é necessário informar ID</param>
+            <returns>Retorna as informações do contato cadastrado em caso de sucesso</returns>
+        </member>
+        <member name="M:GavResortsTest.Controllers.ContactController.Put(System.Int32,GavResortsTest.Models.Contact)">
+            <summary>
+            Atualizar um único contato
+            </summary>
+            <param name="id">Identificador do contato a ser atualizado</param>
+            <param name="contato">Entidade contato com as informações que serão atualizadas, id não é necessário aqui</param>
+            <returns>Retorna as informações do contato atualizadas em caso de sucesso</returns>
+        </member>
+        <member name="M:GavResortsTest.Controllers.ContactController.Delete(System.Int32)">
+            <summary>
+            Remover um contato pelo identificador
+            </summary>
+            <param name="id">Número do indentifiado do contato</param>
+            <returns>Retorna uma mensagem de sucesso ou erro</returns>
+        </member>
+        <member name="M:GavResortsTest.Controllers.LoginController.Login(GavResortsTest.Models.LoginModel)">
+            <summary>
+            Logar na API, todos os outros endpoints dependem do token gerado
+            </summary>
+            <param name="model">Nome de usuário e senha</param>
+            <returns>Retorna as informações do usuário e o token a ser usado nos demais endpoints da aplicação</returns>
+        </member>
+        <member name="T:GavResortsTest.Migrations.PerfilAdd">
+            <inheritdoc />
+        </member>
+        <member name="M:GavResortsTest.Migrations.PerfilAdd.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:GavResortsTest.Migrations.PerfilAdd.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:GavResortsTest.Migrations.PerfilAdd.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
